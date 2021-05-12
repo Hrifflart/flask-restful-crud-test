@@ -40,6 +40,10 @@ class P(Resource):
         abort_if_p_doesnt_exist(n)
         return list[n]
 
+    def get(self, n): #prendre la valeur, vérifier si elle existe bien, si elle existe on l'affiche
+        abort_if_p_doesnt_exist(n)
+        return list[n]
+
     def delete(self, n): #prendre la valeur, vérifier si elle existe bien, si elle existe on l'a supprime
         abort_if_p_doesnt_exist(n)
         del list[n]
